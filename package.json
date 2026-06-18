@@ -1,0 +1,21 @@
+{
+  "name": "ai",
+  "version": "0.1.0",
+  "description": "AI CLI tool",
+  "main": "index.js",
+  "bin": {
+    "ai": "./bin/ai.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarsislimadev/ai.git"
+  },
+  "keywords": ["ai"],
+  "author": "Tarsis Lima (https://github.com/tarsislimadev)",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tarsislimadev/ai/issues"
+  },
+  "homepage": "https://github.com/tarsislimadev/ai#readme"
+}
