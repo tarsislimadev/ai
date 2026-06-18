@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, Box, Spacer } from 'ink';
+import { render, Text, useApp, useInput } from 'ink';
 
 export default function App({ name = 'Stranger' }) {
-	return (
-		<Box>
-			<Text>Hello, <Text color="green">{name}</Text></Text>
-			<Spacer />
-			<Text>Hello by AI</Text>
-		</Box>
-	);
-}
+	const { exit } = useApp();
+
+	useInput((input) => {
+		if (input === 'e') {
+			exit(new Error('Something went wrong!')); // exit with error
+		}
+	});
+
+	return <Text>Press "e" to simulate error exit</Text>;
+};
