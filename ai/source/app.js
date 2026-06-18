@@ -1,10 +1,14 @@
 import React from 'react';
-import {Text} from 'ink';
+import { Text, Box, Spacer } from 'ink';
 
-export default function App({name = 'Stranger'}) {
+export default function App({ name = 'Stranger' }) {
 	return (
-		<Text>
-			Hello, <Text color="green">{name}</Text>
-		</Text>
+		<Box>
+			<Text>
+				Hello, <Text color="green">{name}</Text>
+			</Text>
+			<Spacer />
+			<Text>Hello by AI</Text>
+		</Box>
 	);
 }
